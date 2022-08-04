@@ -38,10 +38,30 @@ export class LoginComponent implements OnInit {
 
   }
 
-  login() {
+  // login() {
 
-    var acno = this.acno
-    var pswd = this.pswd
+  //   var acno = this.acno
+  //   var pswd = this.pswd
+
+  //   if(acno in this.userDetails){
+  //     if(pswd == this.userDetails[acno]['password']){
+  //       alert("login successfully..!!")
+  //     }
+  //     else{
+  //       alert("Incorrect password..!!")
+  //     }
+  //   }
+  //   else{
+  //     alert("account doesn't exist..!!")
+  //   }
+  // }
+
+  //login with 2 argument
+  
+  login(a:any,p:any) {
+
+    var acno = a.value
+    var pswd = p.value
 
     if(acno in this.userDetails){
       if(pswd == this.userDetails[acno]['password']){
